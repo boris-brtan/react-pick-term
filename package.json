@@ -1,0 +1,43 @@
+{
+  "name": "react-pick-term",
+  "repository": "github:boris-brtan/react-pick-term",
+  "version": "0.1.1",
+  "type": "module",
+  "module": "dist/PickTerm.js",
+  "types": "dist/PickTerm.d.ts",
+  "keywords": [
+    "accent",
+    "highlight",
+    "react",
+    "select",
+    "term",
+    "text"
+  ],
+  "description": "Accents (highlights) search term in provided text",
+  "devDependencies": {
+    "@eslint/js": "^9",
+    "@eslint/json": "^0.13.1",
+    "@eslint/markdown": "^7",
+    "@types/bun": "latest",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-plugin-react": "^7",
+    "globals": "^16",
+    "jiti": "^2.5.1",
+    "typescript-eslint": "^8"
+  },
+  "peerDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "react": "^19 || ^18 || ^17",
+    "react-dom": "^19 || ^18 || ^17"
+  },
+  "scripts": {
+    "build": "rm -rf dist && bun build.ts && bun tsc",
+    "create": "bun create playbook/PickTerm.tsx",
+    "dev": "bun --hot playbook/PickTerm.html",
+    "start": "NODE_ENV=production bun src/PickTerm.tsx"
+  }
+}

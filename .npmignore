@@ -1,0 +1,10 @@
+node_modules/
+playbook/
+src/
+
+.*
+*.tgz
+build.ts
+bun.lock
+eslint.config.ts
+tsconfig.json
